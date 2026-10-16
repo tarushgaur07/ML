@@ -1,0 +1,22 @@
+# 🚢 Titanic Survival Prediction
+
+Exploratory Data Analysis and Supervised Machine Learning Pipeline on the Titanic Dataset.
+
+## 📊 Dataset & Preprocessing Steps
+* **Source:** Seaborn library (`sns.load_dataset('titanic')`)
+* **Imputation:** Missing `age` values filled with column mean.
+* **Feature Dropping:** Excluded redundant/high-null columns (`deck`, `embark_town`, `alive`, `class`, `who`, `adult_male`).
+* **Feature Scaling:** Applied `StandardScaler` for distance-based models.
+
+## 🤖 Models Trained & Comparison
+
+| Algorithm | Feature Scaling | Accuracy |
+| :--- | :---: | :---: |
+| **Support Vector Classifier (SVC)** | **Yes** | **81.46%** 🏆 |
+| **Logistic Regression** | No | **80.33%** |
+| **Decision Tree Classifier** | Yes | **80.33%** |
+| **K-Nearest Neighbors (KNN)** | Yes | **79.21%** |
+| **Gaussian Naive Bayes** | No | **77.52%** |
+
+## 🚀 Usage
+Run `TITANIC_DATASET.ipynb` in VS Code, Jupyter Notebook, or Google Colab.
