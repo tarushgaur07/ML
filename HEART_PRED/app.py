@@ -1,7 +1,15 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import os
 
+# Get directory of current app.py file
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# 1. Load trained artifacts safely using absolute path
+model = joblib.load(os.path.join(BASE_DIR, 'LR_HEART.pkl'))
+scaler = joblib.load(os.path.join(BASE_DIR, 'scaler.pkl'))
+expected_columns = joblib.load(os.path.join(BASE_DIR, 'columns.pkl'))
 # 1. Load trained artifacts
 model = joblib.load('LR_HEART.pkl')
 scaler = joblib.load('scaler.pkl')
