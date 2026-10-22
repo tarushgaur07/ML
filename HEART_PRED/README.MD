@@ -1,6 +1,6 @@
-# 🚀 Machine Learning Projects Portfolio
+# HEART PREDICTION MODEL
 
-Welcome to my Machine Learning repository! This repository contains end-to-end ML projects, ranging from data analysis and model training to live web application deployment.
+Welcome to the Heart Disease Prediction Model repository. This project leverages machine learning to assist in early cardiovascular risk assessment through an interactive web interface.
 
 ---
 
