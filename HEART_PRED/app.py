@@ -11,9 +11,7 @@ model = joblib.load(os.path.join(BASE_DIR, 'LR_HEART.pkl'))
 scaler = joblib.load(os.path.join(BASE_DIR, 'scaler.pkl'))
 expected_columns = joblib.load(os.path.join(BASE_DIR, 'columns.pkl'))
 # 1. Load trained artifacts
-model = joblib.load('LR_HEART.pkl')
-scaler = joblib.load('scaler.pkl')
-expected_columns = joblib.load('columns.pkl')
+
 
 st.title("Heart Disease Prediction")
 st.markdown("This app predicts the likelihood of heart disease based on user input.")
